@@ -1,31 +1,37 @@
-// C++ program for 
-// Efficient Solution to find 
-// if count of divisors is 
-// even or odd 
-#include <bits/stdc++.h> 
-using namespace std; 
+// Java program for Efficient 
+// Solution to find if count of 
+// divisors is even or odd 
+import java.io.*; 
+import java.math.*; 
 
-// Function to find if count 
-// of divisors is even or 
-// odd 
-void countDivisors(int n) 
+class GFG 
 { 
-	int root_n = sqrt(n); 
 
-	// If n is a perfect square, 
-	// then it has odd divisors 
-	if (root_n * root_n == n) 
-		printf("Odd\n"); 
-	else
-		printf("Even\n"); 
+	// Function to find if count 
+	// of divisors is even or 
+	// odd 
+	static void countDivisors(int n) 
+	{ 
+		int root_n = (int)(Math.sqrt(n)); 
+
+		// If n is a perfect square, 
+		// then, it has odd divisors 
+		if (root_n * root_n == n) 
+			System.out.println("Odd"); 
+
+		else
+			System.out.println("Even"); 
+	} 
+
+	// Driver code 
+	public static void main(String args[]) 
+		throws IOException 
+	{ 
+		System.out.print("The count of" + 
+					"divisors of 10 is: "); 
+
+		countDivisors(10); 
+	} 
 } 
 
-// Driver Code 
-int main() 
-{ 
-	cout << "The count of divisors"
-		<< " of 10 is: "; 
-
-	countDivisors(10); 
-	return 0; 
-} 
+// This code is contributed by Nikita Tiwari 
